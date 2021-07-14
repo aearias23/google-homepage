@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html>
     <style>
-        .body{ 
+        html, body{   
+            min-width: 400px;
+        }
+        body, html{
+            height: 100%;
+            margin:  0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
             font-size: 14px;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: Arial, sans-serif;
             color:black
         }
         .center {
@@ -13,18 +23,70 @@
         }
         .searchbar {
             margin-top: 45px; 
-            width: 500px;
-            height: 30px;
+            width: 582px;
+            height: 44px;
+            border: 1px solid #dfe1e5;
             border-radius: 25px;
-            padding: 5px 8px 0 16px;
-            flex: 1;
+            padding: 5px 8px 0 16px;    
         }   
         .googleimg {
-            margin-top: 200px;
+            margin-top: 250px;
+        }
+        .space{
+            flex-grow: 1;
+        }
+        .space2{
+            flex-shrink: 0;
+            box-sizing: border-box;
+        }
+        footer{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            color: grey;
+            height: 47px;
+            width: 1880px;
+            padding: 0 20px;
+            margin-top: auto;
+            background: #f2f2f2;
+
+        }
+        a.footerlinks{
+            color: #70757a;
+        }
+        .footerlinks{
+            display: block;
+            padding: 15px;
+            white-space: nowrap;
+        }
+        .leftfooter{
+            display: flex;
+            justify-content: flex-start;
+            min-width: 30%;
+            order: 1;
+        }
+        .rightfooter{
+            display: flex;
+            justify-content: flex-end;
+            min-width: 30%;
+            order: 3;
         }
     </style>
     <body>
         <a href:"#"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google" class="center googleimg"></a>
         <input type:"text" class="center searchbar">
+            <div class="space space2"></div>
+        <footer>
+            <div class="footer leftfooter">
+                <a class="footerlinks">Advertising</a>
+                <a class="footerlinks">Business</a>
+                <a class="footerlinks">How Search Works</a>
+            </div>
+             <div class="rightfooter">
+                <a class="footerlinks">Privacy</a>
+                <a class="footerlinks">Terms</a>
+                <a class="footerlinks">Settings</a>
+            </div>
+        </footer>
     </body>
 </html>
