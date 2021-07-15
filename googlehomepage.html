@@ -32,51 +32,6 @@
         .googleimg {
             margin-top: 250px;
         }
-        .space{
-            flex-grow: 1;
-        }
-        .space2{
-            flex-shrink: 0;
-            box-sizing: border-box;
-        }
-        footer{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            color: grey;
-            height: 47px;
-            width: 1880px;
-            padding: 0 20px;
-            margin-top: auto;
-            background: #f2f2f2;
-
-        }
-        a.footerlinks{
-            color: #70757a;
-        }
-        .footerlinks{
-            display: block;
-            padding: 15px;
-            white-space: nowrap;
-        }
-        .leftfooter{
-            display: flex;
-            justify-content: flex-start;
-            min-width: 30%;
-            order: 1;
-        }
-        .centerfooter{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            order 2;
-        }
-        .rightfooter{
-            display: flex;
-            justify-content: flex-end;
-            min-width: 30%;
-            order: 3;
-        }
     </style>
     <body>
         <div>
@@ -88,6 +43,14 @@
                 }
                 li {
                     display: inline-block;
+                    padding: 20px;
+                }
+                a {
+                    text-decoration: none;
+                    color: #222;
+                }
+                a:hover{
+                    text-decoration: underline;
                 }
             </style>
             <ul>
@@ -102,18 +65,28 @@
         <input type:"text" class="center searchbar">
             <div class="space space2"></div>
         <footer>
-            <div class="footer leftfooter">
-                <a class="footerlinks">Advertising</a>
-                <a class="footerlinks">Business</a>
-                <a class="footerlinks">How Search Works</a>
             <div>
-                <a class="centerfooter">Carbon neutral since 2007</a>
-            </div>
-            </div>
-             <div class="rightfooter">
-                <a class="footerlinks">Privacy</a>
-                <a class="footerlinks">Terms</a>
-                <a class="footerlinks">Settings</a>
+                <style>
+                    .footerlinks{
+                        overflow: hidden;
+                        position: fixed;
+                        bottom: 0;
+                        width: 100%;
+                        background: #f2f2f2; 
+                    }
+                    .navcolor{
+                        color: #70757a;
+                    }
+                </style>
+                <ul class="footerlinks">
+                    <li><a class="navcolor" href="#Advertising">Advertising</a></li>
+                    <li><a class="navcolor" href="#Business">Business</a></li>
+                    <li><a class="navcolor" href="#HowSearchworks">How Search works</a></li>
+                    <li style="margin-left: 485px"><a class="navcolor" href="#Carbonneutralsince2007">Carbon neutral since 2007</a></li>
+                    <li style="float: right"><a class="navcolor" href="#Settings">Settings</a></li>
+                    <li style="float: right"><a class="navcolor" href="#Terms">Terms</a></li>
+                    <li style="float: right"><a class="navcolor" href="#Privacy">Privacy</a></li>
+
             </div>
         </footer>
     </body>
