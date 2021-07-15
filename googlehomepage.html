@@ -65,6 +65,12 @@
             min-width: 30%;
             order: 1;
         }
+        .centerfooter{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            order 2;
+        }
         .rightfooter{
             display: flex;
             justify-content: flex-end;
@@ -73,6 +79,25 @@
         }
     </style>
     <body>
+        <div>
+            <style>
+                ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                }
+                li {
+                    display: inline-block;
+                }
+            </style>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#store">Store</a></li>
+                <li><a href="#Gmail">Gmail</a></li>
+                <li><a href="#images">Images</a></li>
+                <li><a href="#signin">Sign In</a></li>
+              </ul>
+        </div>
         <a href:"#"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google" class="center googleimg"></a>
         <input type:"text" class="center searchbar">
             <div class="space space2"></div>
@@ -81,6 +106,9 @@
                 <a class="footerlinks">Advertising</a>
                 <a class="footerlinks">Business</a>
                 <a class="footerlinks">How Search Works</a>
+            <div>
+                <a class="centerfooter">Carbon neutral since 2007</a>
+            </div>
             </div>
              <div class="rightfooter">
                 <a class="footerlinks">Privacy</a>
