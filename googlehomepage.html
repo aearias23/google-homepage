@@ -39,11 +39,12 @@
                 ul {
                     list-style-type: none;
                     margin: 0;
-                    padding: 0;
+                    padding: 0px 20px;
                 }
                 li {
                     display: inline-block;
-                    padding: 20px;
+                    padding: 5px;
+                    margin : 0 5px;
                 }
                 a {
                     text-decoration: none;
@@ -64,6 +65,31 @@
         <a href:"#"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google" class="center googleimg"></a>
         <input type:"text" class="center searchbar">
             <div class="space space2"></div>
+        <div style="display: inline-flex; justify-content: center; margin-top: 15px;">
+            <style>
+                .searchbutton{
+                    display: inline-block;
+                    background-color: #f8f9fa;
+                    border: 1px solid #f8f9fa;
+                    border-radius: 4px;
+                    color: #3c4043;
+                    font-family: arial,sans-serif;
+                    font-size: 14px;
+                    margin: 11px 4px;
+                        margin-right: 4px;
+                    padding: 0 16px;
+                        padding-top: 0px;
+                    line-height: 27px;
+                    height: 36px;
+                    min-width: 54px;
+                    text-align: center;
+                    cursor: pointer;
+                    user-select: none;
+                }
+            </style>
+            <input type="submit" value="Google Search" class="searchbutton">
+            <input type="submit" value="I'm Feeling Lucky" class="searchbutton">
+        </div>
         <footer>
             <div>
                 <style>
@@ -91,3 +117,4 @@
         </footer>
     </body>
 </html>
+
