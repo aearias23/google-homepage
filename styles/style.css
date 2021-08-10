@@ -96,13 +96,17 @@ button {
     align-items: center;
     justify-content: space-between;
     width: 580px;
-    height: 45px;
     padding: 10px;
-    border: 1px solid var(--border-color);
+    border-style: solid;
     border-radius: 30px;
 }
 
 .search-input {
     height: 34px;
     width: 527px;
+    border: none;
+}
+
+div.searchbar img {
+    opacity:0.2;
 }
