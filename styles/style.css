@@ -125,7 +125,7 @@ div.searchbar img {
 
 .n006 {
     display: flex;
-    margin-top: auto;
+    margin-top: 9.25%;
     background-color: #ecebeb;
 }
 
@@ -151,5 +151,26 @@ div.searchbar img {
     text-decoration: none;
     padding: 15px;
     margin: 0 5px;
+    justify-items: right;
+}
+.n010 {
+    display: inline-flex;
+    justify-content: center;
+    width: 1160px;
 }
 
+.n011{
+    margin-left:auto;
+}
+
+.n007:hover {
+    text-decoration: underline;
+}
+
+.n008:hover {
+    text-decoration: underline;
+}
+
+.n009:hover {
+    text-decoration: underline;
+}
