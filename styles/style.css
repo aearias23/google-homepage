@@ -123,3 +123,33 @@ div.searchbar img {
 
 }
 
+.n006 {
+    display: flex;
+    margin-top: auto;
+    background-color: #ecebeb;
+}
+
+.n007 {
+    display: inline-block;
+    color:rgb(126, 117, 117);
+    text-decoration: none;
+    padding: 15px;
+    margin: 0 5px;
+}
+
+.n008 {
+    display: inline-block;
+    color:rgb(126, 117, 117);
+    text-decoration: none;
+    padding: 15px;
+    margin: 0 5px;
+}
+
+.n009 {
+    display: inline-block;
+    color:rgb(126, 117, 117);
+    text-decoration: none;
+    padding: 15px;
+    margin: 0 5px;
+}
+
